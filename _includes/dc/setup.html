@@ -192,12 +192,252 @@ Social sciences workshops
   </div>
 </div>
 
+<div id="python">
+  <h3>Python</h3>
 
-<p>
-  The setup instructions for the Data Carpentry Social Sciences workshops (with Python)
-  can be found at <a href="https://datacarpentry.org/socialsci-workshop/setup-python-workshop.html">
-    the workshop overview site</a>.
-</p>
+  <p>
+    <a href="https://python.org">Python</a> is a popular language for
+    research computing, and great for general-purpose programming as
+    well.  Installing all of its research packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.anaconda.com/products/individual">Anaconda</a>,
+    an all-in-one installer.
+  </p>
+
+  <p>
+    Regardless of how you choose to install it,
+    <strong>please make sure you install Python version 3.x</strong>
+    (e.g., 3.6 is fine).
+  </p>
+
+  {% comment %}
+  Please remove or comment out this paragraph using
+  <!-- and --> or  {% comment %} and {% endcomment %}
+  if you do not plan to use Jupyter Notebook environment.
+  {% endcomment %}
+  <p>
+    We will teach Python using the <a href="https://jupyter.org/">Jupyter Notebook</a>,
+    a programming environment that runs in a web browser (Jupyter Notebook will be installed by Anaconda). For this to work you will need a reasonably
+    up-to-date browser. The current versions of the Chrome, Safari and
+    Firefox browsers are all
+    <a href="https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility">supported</a>
+    (some older browsers, including Internet Explorer version 9
+    and below, are not).
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#python-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#python-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#python-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="python-windows">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda for Windows installer with Python 3. (If you are not sure which version to choose, you probably want the 64-bit Graphical Installer <em>Anaconda3-...-Windows-x86_64.exe</em>)</li>
+          <li>Install Python 3 by running the Anaconda Installer, using all of the defaults for installation <em>except</em> make sure to check <strong>Add Anaconda to my PATH environment variable</strong>.</li>
+        </ol>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/xxQ0mzZ8UvA?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="python-macos">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda Installer with Python 3 for macOS (you can either use the Graphical or the Command Line Installer).</li>
+          <li>Install Python 3 by running the Anaconda Installer using all of the defaults for installation.</li>
+        </ol>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/TcSAln46u9U?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="python-linux">
+        <ol>
+          <li>Open <a href="https://www.anaconda.com/products/individual#download-section">https://www.anaconda.com/products/individual#download-section</a> with your web browser.</li>
+          <li>Download the Anaconda Installer with Python 3 for Linux.<br>
+            (The installation requires using the shell. If you aren't
+            comfortable doing the installation yourself
+            stop here and request help at the workshop.)
+          </li>
+          <li>
+            Open a terminal window and navigate to the directory where
+            the executable is downloaded (e.g., `cd ~/Downloads`).
+          </li>
+          <li>
+            Type <pre>bash Anaconda3-</pre> and then press
+            <kbd>Tab</kbd> to autocomplete the full file name. The name of
+            file you just downloaded should appear.
+          </li>
+          <li>
+            Press <kbd>Enter</kbd>
+            (or <kbd>Return</kbd> depending on your keyboard).
+            You will follow the text-only prompts.
+            To move through the text, press <kbd>Spacebar</kbd>.
+            Type <code>yes</code> and press enter to approve the license.
+            Press <kbd>Enter</kbd> (or <kbd>Return</kbd>)
+            to approve the default location
+            for the files.
+            Type <code>yes</code> and press
+            <kbd>Enter</kbd> (or <kbd>Return</kbd>)
+            to prepend Anaconda to your <code>PATH</code>
+            (this makes the Anaconda distribution the default Python).
+          </li>
+          <li>
+            Close the terminal window.
+          </li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="git">
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported
+    web browser</a>.
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+      for keeping your email address private</a> provided at GitHub.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#git-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="git-windows">
+        <p>
+          Git should be installed on your computer as part of your Bash
+          install (see the
+          <a href="#shell">Shell installation instructions</a>).
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-macos">
+        <p>
+          <strong>For macOS</strong>, install Git for Mac
+          by downloading and running the most recent "mavericks" installer from
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+          Because this installer is not signed by the developer, you may have to
+          right click (control click) on the .pkg file, click Open, and click
+          Open on the pop up window.
+          After installing Git, there will not be anything in your <code>/Applications</code> folder,
+          as Git is a command line program.
+          <strong>For older versions of OS X (10.5-10.8)</strong> use the
+          most recent available installer labelled "snow-leopard"
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+        </p>
+        <h4>Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+          <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-linux">
+        <p>
+          If Git is not already available on your machine you can try to
+          install it via your distro's package manager. For Debian/Ubuntu run
+          <code>sudo apt-get install git</code> and for Fedora run
+          <code>sudo dnf install git</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="editor">
+  <h3>Text Editor</h3>
+
+  <p>
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words. The default text editor on macOS and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive. If you accidentally find yourself stuck in it, hit
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
+    return to the shell.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="editor-windows">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It is installed along with Git.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+          <strong>Be aware that you must
+            add its installation directory to your system path.</strong>
+          Please ask your instructor to help you do this.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-macos">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          See the Git installation <a href="#editor-macos-video-tutorial">video tutorial</a>
+          for an example on how to open nano.
+          It should be pre-installed.
+        </p>
+        <h4 id="editor-macos-video-tutorial">Video Tutorial</h4>
+        <div class="yt-wrapper2">
+        <div class="yt-wrapper">
+        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
+        </div>
+        </div>
+        <p>
+          Others editors that you can use are
+          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="editor-linux">
+        <p>
+          nano is a basic editor and the default that instructors use in the workshop.
+          It should be pre-installed.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+          <a href="https://kate-editor.org/">Kate</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+
 {% else %}
 {% include warning-flavor.html %}
 {% endif %}
